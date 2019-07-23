@@ -79,10 +79,12 @@ class Header extends Component {
     render() {
         const { sysTime, dayPictureUrl, weather } = this.state;
         const title = this.getTitle();
+        const name = memoryUtils.user.username;
+        console.log(name);
         return (
             <div className='header'>
                 <div className='header_top'>
-                    <span> 欢迎 admin</span>
+                    <span> 欢迎 {name}</span>
                     <LinkButton onClick={this.logout}>退出</LinkButton>
                 </div>
                 <div className='header_bottom'>
