@@ -1,0 +1,46 @@
+.header{
+    height: 80px;
+    background-color: #fff;
+    .header_top{
+       height: 40px;
+       border-bottom:  1px solid green;
+       padding-right: 20px;
+       text-align: right;
+       line-height: 40px;
+    }
+    .header_bottom{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        .header_bottom_left{
+           width: 25%;
+           text-align: center;
+           position: relative;
+           font-size: 20px;
+    
+           &::after {
+              content:'';
+              position: absolute;
+              top: 30px;
+              right: 50%;
+              transform: translateX(50%);
+              border-top: 20px solid #fff;
+              border-bottom: 20px solid transparent;
+              border-left: 20px solid transparent;
+              border-right: 20px solid transparent;
+
+           }
+        }
+        .header_bottom_right{
+            text-align: right;
+            width: 75%;
+            span{
+                padding: 0 10px;
+            }
+            img{
+                width: 30px;
+                height: 20px;
+            }
+        }
+    }
+}

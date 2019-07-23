@@ -14,7 +14,6 @@ axiox.interceptors.request.use((config)=>{
 })
 
 axiox.interceptors.response.use((response)=>{
-    console.log(response)
      return response.data;
 },(error)=>{
     message.error('请求出错'+error.message);
